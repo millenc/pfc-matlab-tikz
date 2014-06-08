@@ -17,7 +17,7 @@ figure;
 surf(aa, bb, z1);
 xlabel('x'); ylabel('y');
 zlabel('T_{D}(x,y)');
-matlab2tikz('drastic-tnorm-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/drastic-tnorm-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
 
 %T-conorma drástica
 z1 = ones(size(a));
@@ -27,4 +27,4 @@ figure;
 surf(aa, bb, z1); 
 xlabel('x'); ylabel('y');
 zlabel('S_{D}(x,y)');
-matlab2tikz('drastic-tconorm-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/drastic-tconorm-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');

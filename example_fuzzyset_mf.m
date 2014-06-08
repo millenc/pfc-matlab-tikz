@@ -21,4 +21,4 @@ legend('\mu_{VT}(\mu_{i})', 'Location', 'SouthEast');
 xlabel('\mu_{i} - Altura en cm');
 ylabel('\mu_{VT}(\mu_{i})');
 text(x(i), 0.88, ['  \leftarrow (\mu_{i}=', num2str(x(i)), '; \mu_{VT}(195)=', num2str(y(i)), ')']);
-matlab2tikz('very-tall-fuzzyset-example.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/very-tall-fuzzyset-example.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');

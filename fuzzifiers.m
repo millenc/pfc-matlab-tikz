@@ -24,7 +24,7 @@ set(gca, 'box', 'off')
 text(42, 0.95, '(x*,\mu_{A''}(x*))', 'clipping', 'off');
 xlabel('x');
 ylabel('\mu_{A''}(x)');
-matlab2tikz('fuzzifier_singleton.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/fuzzifier_singleton.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
 
 % gaussian
 figure;
@@ -35,7 +35,7 @@ set(gca, 'box', 'off')
 text(44, 0.96, '(x*,\mu_{A''}(x*))', 'clipping', 'off');
 xlabel('x');
 ylabel('\mu_{A''}(x)');
-matlab2tikz('fuzzifier_gaussian.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/fuzzifier_gaussian.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
 
 % triangular
 figure;
@@ -46,4 +46,4 @@ set(gca, 'box', 'off')
 text(44, 0.96, '(x*,\mu_{A''}(x*))', 'clipping', 'off');
 xlabel('x');
 ylabel('\mu_{A''}(x)');
-matlab2tikz('fuzzifier_triangular.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/fuzzifier_triangular.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');

@@ -8,7 +8,7 @@ surf(X,Y,M);
 xlabel('x');
 ylabel('y');
 zlabel('S_{max}(x,y)');
-matlab2tikz('max-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/max-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
 
 %Suma probabilística
 P = X+Y-X.*Y;
@@ -17,7 +17,7 @@ surf(X,Y,P);
 xlabel('x');
 ylabel('y');
 zlabel('S_{P}(x,y)');
-matlab2tikz('probabilistic-sum-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/probabilistic-sum-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
 
 %Suma acotada
 L=min(X+Y,1);
@@ -26,4 +26,4 @@ surf(X,Y,L);
 xlabel('x');
 ylabel('y');
 zlabel('S_{B}(x,y)');
-matlab2tikz('bounded-sum-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/bounded-sum-3dplot.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');

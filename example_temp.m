@@ -31,4 +31,4 @@ text(40, 1.05, 'Media (\mu_{Media}(x))', 'clipping', 'off');
 text(80, 1.05, 'Alta (\mu_{Alta}(x))', 'clipping', 'off');
 xlabel('x - Temperatura');
 
-matlab2tikz('example-temp-lang-variable.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/example-temp-lang-variable.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');

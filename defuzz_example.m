@@ -27,4 +27,4 @@ plot(x,y,'-k',dc,y(dc+1),'*',db,y(db+1),'+',dm,y(dm+1),'s',ds,y(ds+1),'v',dl,y(d
 legend('\mu(x)','centroid','bisector','mom','som','lom');
 set(gca,'xticklabel',{[]})
 set(gca, 'box', 'off')
-matlab2tikz('defuzzifiers.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/defuzzifiers.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');

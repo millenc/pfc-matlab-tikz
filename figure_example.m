@@ -20,4 +20,4 @@ xlim([-pi pi]);
 legend('f(x)', 'g(x)', 'f(x)=g(x)', 'Location', 'SouthEast');
 xlabel('x');
 title('Improved Example Figure');
-matlab2tikz('publication-quality-example.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
+matlab2tikz('./output/publication-quality-example.tikz','showInfo', false,'standalone', false,'height', '\figureheight', 'width', '\figurewidth');
