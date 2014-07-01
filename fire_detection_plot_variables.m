@@ -1,6 +1,7 @@
 clearvars;
 addpath('../pfc-matlab/inferencia');
 addpath('./src');
+addpath('./includes');
 
 x_temp     = 0:120;
 x_smoke    = 0:100;
@@ -38,7 +39,7 @@ matlab2tikz('./output/smoke_lang_variable.tikz','showInfo', false,'standalone', 
 x = x_light;
 figure;
 set(gca, 'FontSize', fsz, 'LineWidth', alw);
-plot(x,arrayfun(@light.low,x),'k-',x,arrayfun(@light.medium,x),'k-',x,arrayfun(@light.high,x),'k-','LineWidth',lw,'MarkerSize',msz);
+plot(x,arrayfun(@llight.low,x),'k-',x,arrayfun(@llight.medium,x),'k-',x,arrayfun(@llight.high,x),'k-','LineWidth',lw,'MarkerSize',msz);
 text(1, 1.1, 'Baja (L)', 'clipping', 'off');
 text(450, 1.1, 'Media (M)', 'clipping', 'off');
 text(900, 1.1, 'Alta (H)', 'clipping', 'off');
