@@ -14,7 +14,7 @@ figure(2);
 pos = get(gcf, 'Position');
 %set(gcf, 'Position', [pos(1) pos(2) width*100, height*100]); %<- Set size
 set(gca, 'FontSize', fsz, 'LineWidth', alw); %<- Set properties
-plot(x,y,'b-',[195],[0.88],'g*','LineWidth',lw,'MarkerSize',msz); %<- Specify plot properites
+plot(x,y,'k-',[195],[0.88],'b*','LineWidth',lw,'MarkerSize',msz); %<- Specify plot properites
 xlim([150 230]);
 ylim([-0.1 1.1]);
 legend('\mu_{VT}(\mu_{i})', 'Location', 'SouthEast');
